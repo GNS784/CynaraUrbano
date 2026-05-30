@@ -37,4 +37,14 @@
     z-index: 1;
   }
 /* @endsection */
+#contato{
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#infos {
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+}
 }

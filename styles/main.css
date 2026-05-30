@@ -22,7 +22,7 @@ nav{
   padding: var(--space-layolt-phone);
   border-radius: 0px 0px 10px 10px;
   transition: 0.5s;
-  z-index: 100;
+  z-index: 9;
 }
 ul{
   position: absolute;

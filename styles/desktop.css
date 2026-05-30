@@ -1,4 +1,7 @@
 @media screen and (min-width: 900px){
+  header, section{
+    padding: var(--space-layolt-desktop);
+  }
   header{
     height: 100vh;
   }

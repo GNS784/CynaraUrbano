@@ -13,7 +13,7 @@
   position: fixed;
   bottom: 15px;
   right: 15px;
-  z-index: 1000;
+  z-index: 2;
   transition: 0.5s;
 }
 #buttonWhatsapp:hover{
@@ -61,7 +61,7 @@
 
   --space-layolt-phone: 0px 20px;
   --space-layolt-tablet: 0px 40px;
-  --space-layolt-notebook: 0px 60px;
+  --space-layolt-desktop: 0px 60px;
 
   --space-xs: 4px;
   --space-sm: 8px;
@@ -440,6 +440,9 @@ h2{
     border-radius: 10px;
     background-color: var(--cor01);
   }
+  .buttonSection:last-child{
+    display: none;
+  }
   
 
 
@@ -546,32 +549,115 @@ h2{
 /* @section: ============================================================= FOOTER ================================================================== */
 
 footer{
+  justify-content: start;
   width: 100%;
-  height: 100vh;
   background-color: #1E1E1E;
   padding: 0px;
 }
+
+/* @section: Primeira parte do footer */
 #contato{
-  justify-content: start;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: auto;
   padding: var(--space-layolt-phone);
   padding-top: 50px;
-  background-color: lightgray;
+  margin-bottom: 50px;
+}
+#titleFooter{
+  margin: 30px 0px 0px 30px;
 }
 h3{
   width: 100%;
   margin: 10px 0px;
   text-align: left;
   font-family: var(--font4);
-  font-size: text;
+  font-size: var(--title-big);
   font-style: normal;
   font-weight: 250;
   line-height: 95%;
   color: white;
 }
+#bollsFooter{
+  justify-content: start;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+.bollFooter{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid var(--cor02);
+}
 h3 > em{
   color: var(--cor01);
 }
+#infos{
+  align-items: start;
+  gap: 20px;
+}
+
+#infos > div{
+  align-items: start;
+  gap: 2px;
+}
+#infos > div > p{
+  font-family: var(--font3);
+  font-weight: 200;
+  font-style: normal;
+  font-size: var(--text-min);
+  text-align: left;
+  color: white;
+  letter-spacing: 1px;
+}
+#infos > div > a{
+  font-family: var(--font3);
+  font-size: var(--text-small);
+  font-weight: 200;
+  font-style: normal;
+  color: var(--cor02);
+}
+h4{
+  font-family: var(--font3);
+  font-size: var(--text);
+  font-style: normal;
+  font-weight: 250;
+  color: var(--cor08);
+  margin-bottom: 5px;
+}
+
+#whatsapp > button{
+  display: none;
+}
+
+#horarios > p:last-child{
+  color: var(--cor08);
+}
+/* @endsection */
+
+/* @section: Segunda parte do footer */
+
+#footer{
+  flex-direction: row;
+  width: 100%;
+  background-color: lightblue;
+}
+#footerEmail{
+  background-color: lightcoral;
+}
+
+#rodape{
+  margin: 20px;
+  color: white;
+  font-family: var(--font3);
+  font-weight: 200;
+  font-style: normal;
+  font-size: var(--text-min);
+}
+/* @endsection */
 
 /* @endsection */
