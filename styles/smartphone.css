@@ -1,0 +1,577 @@
+/* @section: Configurações gerais de estilo */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* @section: Elementos fixos */
+#buttonWhatsapp{
+  width: 60px;
+  height: auto;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1000;
+  transition: 0.5s;
+}
+#buttonWhatsapp:hover{
+  transform: scale(1.1);
+}
+
+/* @endsection */
+
+
+:root {
+
+  /* Fonts */
+  --font1: 'Cormorant Garamond', serif;
+  --font2: 'Cormorant', serif;
+  --font3: 'Inter', sans-serif;
+  --font4: 'Playfair Display', serif;
+
+  /* Cores */
+  --cor01: #639E75;
+  --cor02: #4F7F5E;
+  --cor03: #8FBFA3;
+  --cor04: #C9A34E;
+  --cor05: #E6C873;
+  --cor06: #F7F7F5;
+  --cor07: #2E2E2E;
+  --cor08: #A8A8A8;
+  --fundo: #FAF8F5;
+  
+
+  /* Tamanhos de textos */
+
+  --main-title:   clamp(30px, 7vw, 62px);   /* Titulo Principal */
+  --title-big:    clamp(30px, 5vw, 56px);   /* Titulos Grandes*/
+  --title-medium: clamp(24px, 4vw, 42px);   /* Titulos Médios*/
+  --sub-title:    clamp(18px, 2.5vw, 28px); /* SubTitulos*/
+  --text:         clamp(12px, 1.5vw, 18px); /* Textos Principais*/
+  --text-small:   clamp(12px, 1.2vw, 16px); /* Textos Pequenos*/
+  --text-min:     clamp(10px, 1vw, 14px);   /* Textos Mínimos*/
+  --text-infobar: clamp(9px, 1vw, 12px);    /* Textos da barra de informações */
+  --text-button:  clamp(11px, 1.4vw, 16px); /* Textos de Botões*/
+  --text-nav:     clamp(12px, 1.3vw, 16px); /* Textos de Navegação*/
+  --caption:      clamp(11px, 1vw, 13px);   /* Textos de Legendas*/
+
+  /* Espaçamentos */
+
+  --space-layolt-phone: 0px 20px;
+  --space-layolt-tablet: 0px 40px;
+  --space-layolt-notebook: 0px 60px;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-xxl: 80px;
+
+  /* padding padrão */
+
+  --padding-section: clamp(40px, 8vw, 120px);
+  --padding-container: clamp(15px, 4vw, 40px);
+
+  /* gaps */
+
+  --gap-sm: 10px;
+  --gap-md: 20px;
+  --gap-lg: 40px;
+
+  /* Bordas */
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  /* Sombras */
+
+  --shadow-sm:
+  0px 2px 8px rgba(0,0,0,0.08);
+
+  --shadow-md:
+  0px 5px 20px rgba(0,0,0,0.12);
+
+  --shadow-lg:
+  0px 10px 40px rgba(0,0,0,0.18);
+
+  /* Transições */
+
+  --transition-fast: .2s ease;
+  --transition-normal: .4s ease;
+  --transition-slow: .7s ease;
+
+}
+body{
+  background-color: var(--fundo);
+  overflow-x: hidden;
+  width: 100vw;
+}
+main, div,section,footer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section{
+  overflow-x: hidden;
+}
+main{
+  overflow-y: hidden;
+}
+/* @endsection */
+
+img{width: 20px;}    /* EXCLUIR ISSO AQUI MAIS TARDE, É APENAS PARA ORGANIZAÇÃO DE LAYOUT */
+
+header, section, footer{
+  padding: var(--space-layolt-phone);
+}
+/* @section: ==========================================================   HEADER   ============================================================== */
+
+header{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: var(--cor06);
+  background-image: url(../image/homePage.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#boxTitle{
+  width: 100%;
+  gap: 5px;
+  color: white;
+  transform: translateY(100px);
+  transition: 0.5s;
+  opacity: 1; /*     MODIFIQUEI    */
+}
+#caption{
+  font-size: var(--text-small);
+  font-family: var(--font3);
+  text-align: center;
+  color: var(--cor02);
+}
+h1{
+  font-size: var(--main-title);
+  font-family: var(--font4);
+  font-weight: normal;
+  text-align: center;
+  line-height: 90%;
+  color: var(--cor06);
+}
+#desTitle{
+  font-size: var(--text-min);
+  font-family: var(--font3);
+  font-weight: 100;
+  text-align: center;
+}
+#buttonsTitle{
+  width: 100%;
+  gap: 20px;
+  flex-direction: row;
+  margin: 20px 0px;
+}
+.buttonTitle{
+  padding: clamp(10px, 2vw, 15px) clamp(10px, 2vw, 25px);
+  border: 1px solid var(--cor02);
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.buttonTitle:first-child{
+  background-color: var(--cor02);
+}
+.buttonTitle:hover{
+  transform: scale(1.05);
+}
+.buttonTitle > a{
+  font-size: var(--text-button);
+  font-weight: 200;
+}
+#indScrollbar{
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  margin: 20px 0px;
+  gap: 10px;
+}
+#indScrollbar > p{
+  font-size: 10px;
+  font-family: var(--font3);
+  color: #f7f7f58f;
+}
+#indScrollbar > div{
+  width: 20px;
+  height: 1px;
+  background-color: #f7f7f58f;
+  transform: rotate(90deg);
+}
+
+/* @endsection */
+
+
+
+/* @section: ============================================================= INFOBAR ================================================================== */
+
+#infobar{
+  flex-direction: row;
+  gap: 5px;
+  width: 100%;
+  height: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--cor03);
+}
+hr{
+  width: 40px;
+  height: 0.5px;
+  border: 0px;
+  background-color: black;
+  transform: rotate(90deg);
+}
+.boxInfobar > p{
+  width: 100%;
+  font-size: var(--text-infobar);
+  font-family: var(--font3);
+  font-style: normal;
+  text-align: center;
+  color: var(--cor07);
+}
+.boxInfobar > p:first-child{
+  color: var(--cor06);
+}
+/* @endsection */
+
+
+/* @section: ============================================================= CYNARA ================================================================== */
+
+#on{
+  overflow-X: hidden;
+  max-width: 1000px;
+  align-items: start;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--cor06);
+}
+.subTitle{
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+  width: 100%;
+  transition: 0.5s;
+}
+#aboutDescription > .subTitle{
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.subTitle > p{
+  font-size:  var(--text-small);
+  font-family: var(--font3);
+  font-style: normal;
+  letter-spacing: 1px;
+  color: var(--cor02);
+}
+.subTitle > hr{
+  transform: rotate(0deg);
+  background-color: var(--cor02);
+}
+
+h2{
+  margin: 20px 0px;
+  font-family: var(--font4);
+  font-size: var(--title-medium);
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  line-height: 90%;
+  letter-spacing: 1px;
+  color: var(--cor07);
+  transition: 0.7s;
+}
+#aboutDescription > h2{
+  transform: translateX(50%);
+  opacity: 0;
+}
+
+#descriptionOn{
+  font-size: var(--text);
+  font-family: var(--font3);
+  font-style: normal;
+  font-weight: 250;
+  text-align: justify;
+  color: var(--cor07);
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.7s;
+}
+
+#nameRep{
+  align-items: start;
+  width: 100%;
+  margin: 20px 0px;
+}
+#nameRep > hr{
+  display: none;
+}
+#name{
+  font-size: var(--sub-title);
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--font4);
+  color: var(--cor01);
+}
+#desName{
+  font-size: var(--text-min);
+  font-family: var(--font3);
+  font-style: normal;
+  color: var(--cor07);
+}
+
+#aboutImg{
+  position: relative;
+  width: 100%;
+}
+#aboutImg > img{
+  width: 70%;
+  border-radius: 100px 0px 100px 0px;
+  z-index: 1;
+}
+
+#boxImg{
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  padding: 30px 0px;
+}
+.txt01{
+  font-size: clamp(20px, 4vw, 30px);
+  font-family: var(--font2);
+  color: var(--cor01);
+}
+.txt02{
+  width: 120%;
+  font-size: clamp(10px, 2vw, 12px);
+  font-family: var(--font3);
+  font-style: normal;
+  color: var(--cor01);
+  
+}
+
+
+/* @endsection */
+
+
+
+/* @section: ============================================================= SERVICES ================================================================== */
+
+
+  .subTitlee{
+    flex-direction: row;
+    gap: 10px;
+  }
+  .subTitlee > hr{
+    background-color: var(--cor02);
+    transform: rotate(0deg);
+  }
+  .subTitlee > p{
+    font-size: var(--text-min);
+    font-family: var(--font3);
+    font-style: normal;
+    letter-spacing: 1px;
+    color: var(--cor02);
+    
+  }
+  #services > h2{
+    margin-bottom: 50px;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  #boxServices {
+    width: clamp(10px, 100%, 1000px);
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .bxServices{
+    align-items: start;
+    gap: 5px;
+    width: clamp(160px, 40% ,300px);
+    height: 180px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 13%);
+    transition: 0.5s;
+  }
+  .titleS{
+    width: 100%;
+    font-family: var(--font1);
+    font-size: var(--sub-title);
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+  }
+  .desS{
+    font-family: var(--font3);
+    font-size: var(--text-min);
+    font-style: normal;
+    font-weight: 250;
+  }
+  .buttonS{
+    color: var(--cor02);
+    font-family: var(--font3);
+    font-size: var(--text-min);
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  .buttonSection{
+    width: clamp(170px, 15vw, 200px);
+    height: 40px;
+    margin: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor01);
+  }
+  
+
+
+/* @endsection */
+
+
+
+/* @section: ============================================================== GALERY ================================================================== */
+
+
+  #galery{
+    width: 100%;
+    align-items: start;
+    margin: 50px 0px;
+  }
+  #galery > #subTitle{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  #galery > h2{
+    text-align: left;
+  }
+  #boxGalery {
+    flex-direction: column;
+    gap: 20px;
+    width: clamp(200px, 90vw, 1000px);
+    margin: 30px auto;
+  }
+  #box01, #box02{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+  }
+  #box01{
+    height: clamp(150px, 20vw, 300px);
+  }
+  #box02{
+    height: clamp(100px, 20vw, 200px);
+  }
+  #box01 > div:first-child, #box02 > div{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center center;
+  }
+  #galery02{
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #galery > button{
+    margin: 0px auto;
+  }
+
+
+/* @endsection */
+
+
+/* @section: ============================================================= CLIENTS ================================================================== */
+
+#clients{
+  width: 100%;
+  margin: 50px 0px;
+}
+#clients > h2{
+  text-align: center;
+}
+
+#boxClients{
+  width: clamp(350px, 56vw, 800px);
+  height: clamp(200px, 50vw, 400px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  margin: 30px;
+}
+.depoimentos{
+  width: 90%;
+  font-size: var(--text);
+  font-family: var(--font3);
+  font-style: normal;
+  text-align: justify;
+  margin: 10px 0px;
+}
+
+#imgCliente{
+  width: clamp(30px, 5vw, 50px);
+  margin: 5px;
+}
+.nomeCliente{
+  font-size: clamp(8px, 1vw, 14px);
+  font-family: var(--font3);
+  font-style: normal;
+}
+
+/* @endsection */
+
+
+/* @section: ============================================================= FOOTER ================================================================== */
+
+footer{
+  width: 100%;
+  height: 100vh;
+  background-color: #1E1E1E;
+  padding: 0px;
+}
+#contato{
+  justify-content: start;
+  width: 100%;
+  height: 500px;
+  padding: var(--space-layolt-phone);
+  padding-top: 50px;
+  background-color: lightgray;
+}
+h3{
+  width: 100%;
+  margin: 10px 0px;
+  text-align: left;
+  font-family: var(--font4);
+  font-size: text;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 95%;
+  color: white;
+}
+h3 > em{
+  color: var(--cor01);
+}
+
+/* @endsection */

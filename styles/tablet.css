@@ -1,0 +1,40 @@
+@media screen and (min-width: 600px){
+
+  /* @section: Configurações para a sessão Header */
+  ul{
+    flex-direction: row;
+    gap: 20px;
+    top: 0px;
+    height: 100%;
+    opacity: 1;
+    background-color: transparent;
+  }
+  li{
+    font-weight: 250;
+  }
+  li > a:hover{
+    cursor: pointer;
+  }
+  #sairIcone, #menuLogo, #sacolaBranca{
+    display: none;
+  }
+  #sacola{
+    display: block;
+    width: 30px;
+  }
+
+  /* @endsection */
+
+/* @section: Configurações da sessão Cynara */
+
+  #on{
+    flex-direction: row;
+    gap: 20px;
+  }
+  #aboutImg > img {
+    width: clamp(250px, 30vw, 350px);
+    border-radius: 100px 0px 100px 0px;
+    z-index: 1;
+  }
+/* @endsection */
+}

@@ -1,0 +1,5 @@
+@media screen and (min-width: 900px){
+  header{
+    height: 100vh;
+  }
+}

@@ -1,0 +1,64 @@
+/* ================================================================== CONFIGURAÇÕES GERAIS PARA TODAS AS PÁGINAS ============================================================================ */
+h1, h2, p, a, li {
+    font-size: 10px;
+}
+
+nav,header,ul{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* @section: NAVEGAÇÃO */
+nav{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: var(--space-layolt-phone);
+  border-radius: 0px 0px 10px 10px;
+  transition: 0.5s;
+  z-index: 100;
+}
+ul{
+  position: absolute;
+  top: -180px;
+  left: 0px;
+  gap: 10px;
+  width: 100%;
+  height: 180px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: var(--cor02);
+  list-style: none;
+  transition: 0.5s;
+  opacity: 0;
+}
+a{
+  text-decoration: none;
+  color: var(--cor06);
+  font-size: var(--text-nav);
+  font-family: var(--font3);
+}
+#logo{
+  width: 40px;
+}
+#sacola{
+  display: none;
+}
+#sacolaBranca{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 30px;
+}
+#sairIcone{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* @endsection */
